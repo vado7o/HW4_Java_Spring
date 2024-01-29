@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THYMELEAF</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<div class="parent"><h1>Пример отображения посредством шаблонизатора THYMELEAF динамических данных таблицы "users":</span></h1></div>
+<div class="parent">
+    <table>
+    <tr>
+        <th>ID</th>
+        <th>ФИО</th>
+        <th>ВОЗРАСТ</th>
+        <th>EMAIL</th>
+    </tr>
+    <tr th:each="user: ${users}">
+        <td th:text="${user.id}"></td>
+        <td><a th:href="@{/user/{id}(id=${user.id})}" th:text="${user.name}"></a></td>
+        <td th:text="${user.age}"></td>
+        <td th:text="${user.email}"></td>
+    </tr>
+</table>
+</div>
+<p><a href="/main">Назад</a></p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UserProfile</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+<h1 th:text = "${user.name}"></h1>
+<p>ID: <span th:text="${user.id}"></span></p>
+<p>Возраст: <span th:text="${user.age}"></span></p>
+<p>Email: <span th:text="${user.email}"></span></p>
+</body>
+</html>

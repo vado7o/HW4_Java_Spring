@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: navy;
+    font-family: 'Arial', sans-serif;
+}
+
+.parent {
+display: flex;
+justify-content: center; }
+
+.border {
+    border: 5px solid blue;
+}
